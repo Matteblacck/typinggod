@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="/typespeed/styles.css"> <!-- Подключаем наш файл стилей -->
+    <title>Typing Game</title>
+</head>
+<body>
+    <section class="info hero has-background-primary is-large">
+        <div class="upper hero is-large">
+            <div class="hero-head container"> 
+                <h1 class="label is-size-3 has-text-white promo has-text-centered">Typing God</h1>
+                <div class="field">
+                    <label class="label has-text-white">Введите количество символов (от 1 до 50):</label>
+                    <div class="control">
+                        <input class="input" type="number" id="symbolCount" value="30" min="1" max="50" />
+                    </div>
+                </div>
+                <h3 class="label is-size-5 has-text-white has-text-centered begin">Press Enter to Start</h3>
+            </div>
+        </div>
+        <div class="custgame hero has-background-grey-dark">
+            <h3 class="label is-size-4 has-text-white has-text-centered">Ошибки</h3>
+            <progress id="prog" class="progress is-danger" value="0" max="50"></progress>
+        </div>
+        <div class="hero-body has-background-grey-dark">
+            <div id="columns"> 
+                <div class="buttons columns is-half is-centered">
+                    <!-- Здесь будет отрисовка кнопок -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="/typespeed/script.js"></script>
+</body>
+</html>
